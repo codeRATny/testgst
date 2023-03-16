@@ -58,6 +58,7 @@ static void pad_added_handler(GstElement *src, GstPad *new_pad, CustomData *data
         goto exit;
     }
 
+    std::cout << "ok\n";
     gst_pad_link(new_pad, sink_pad);
 
 exit:
